@@ -43,7 +43,7 @@ function run(cmd, options) {
 		const stdout = execSync(cmd, {
 			encoding: "utf8",
 			cwd: optionsWithDefaults.dir,
-			maxBuffer: 20 * 1024 * 1024,
+			maxBuffer: 200 * 1024 * 1024,
 		});
 		const output = {
 			status: 0,
